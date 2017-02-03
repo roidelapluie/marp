@@ -1,9 +1,9 @@
 Harpoon
 =======
 
-**Markdown presentation writer, powered by [Electron](http://electron.atom.io/).
+**Markdown presentation writer, powered by [Electron](http://electron.atom.io/).**
 
-A fork of [marp](https://yhatt.github.io/marp/), with a [Inuits](https://inuits.eu) theme.**
+**A fork of [marp](https://yhatt.github.io/marp/), with a [Inuits](https://inuits.eu) theme.**
 
 ![Marp](screenshot.png)
 
