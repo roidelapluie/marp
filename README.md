@@ -7,6 +7,8 @@ Harpoon
 
 ![Marp](screenshot.png)
 
+![Harpoon](screenshot-inuits.png)
+
 
 ## Usage
 
