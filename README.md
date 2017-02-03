@@ -1,9 +1,14 @@
-Marp
-===
+Marp-Inuits
+===========
 
 **Markdown presentation writer, powered by [Electron](http://electron.atom.io/).**
 
 ![Marp](screenshot.png)
+
+
+# CAUTION
+
+This is a Fork of Marp with a Inuis theme.
 
 ## Usage
 
@@ -75,3 +80,12 @@ npm install appdmg
 
 Copyright &copy; 2016 [Yuki Hattori](https://github.com/yhatt).
 This software released under the [MIT License](https://github.com/yhatt/marp/blob/master/LICENSE).
+
+Files under images/themes/inuits/ are not covered by the above copyright and
+licences.
+
+- images/themes/inuits/background.png: Comes from an OpenOffice theme (unknown license)
+- images/themes/inuits/background-wolf.png: OpenOffice theme (background) - Unknown (wolf)
+- images/themes/inuits/inuitsatwork.png: &copy; Inuits all rights reserved
+- images/themes/inuits/inuits.png: &copy; Inuits all rights reserved
+
