@@ -1,0 +1,113 @@
+@import '../../node_modules/github-markdown-css/github-markdown'
+@import '../../node_modules/highlight.js/styles/github'
+@import './markdown'
+
+$inuits: rgb(153,153,255);
+$inuitsgreen: rgb(0,255,0);
+
++body-slide-mode
+  font-size: 1.5em
+  color: #ffffff
+
+  p
+    color: #ffffff
+
+  ul
+
+    li
+      color: #ffffff
+
+  .slide_wrapper > .slide
+    font-size: 1.3em
+    padding: 0 78.5px
+    justify-content: center
+    background-image: url('../../images/themes/inuits/background.png');
+    background-color: black;
+    background-size: 100%;
+
+    .slide_bg_img
+
+        opacity: 1
+
+  .slide_wrapper
+
+
+    h1, h2, h3, h4, h5, h6
+      text-align: center
+
+    h3, h4, h5, h6
+      color: #cdcdcd
+
+    img
+        background: none
+
+  .slide_page
+    font-size: 24px
+    color: #ffffff
+
+  .slide_footer
+    opacity: .75
+    font-size: 18px
+    color: #aaaaaa
+
+  .markdown-body
+    font-size: 29px
+
+    h1
+      font-size: 1.6em
+      color: $inuits
+      border-bottom: none
+    h2
+      font-size: 1.3em
+      border-bottom: none
+    h3
+      font-size: 1.1em
+    h4
+      font-size: 1.05em
+    h5
+      font-size: 1em
+    h6
+      font-size: 0.9em
+
+    pre
+      border: 1px solid #999
+      line-height: 1.15
+
+  .slide_wrapper
+    &[data-template~="title"] > .slide
+      font-size: 1em
+      background-image: url('../../images/themes/inuits/background-wolf.png');
+      padding-top: 25%;
+
+      img
+        display: block
+        margin: auto
+
+    &[data-template~="ignite"] > .slide
+      background-image: none;
+      padding-top: 55%
+
+      h1
+        font-size: 2em
+        color: white;
+        background-color: rgba(0,0,0,.7);
+
+        a
+          color: white!important;
+
+      small
+        font-size: .5em
+        display: block
+        color: black
+        text-align: center
+
+        a
+            color: black
+
+
+      small.white
+          color:white!important
+
+          a
+              color:white!important
+
