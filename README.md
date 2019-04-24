@@ -4,6 +4,15 @@ Harpoon
 **Markdown presentation writer, powered by [Electron](http://electron.atom.io/).**
 
 **A fork of [marp](https://yhatt.github.io/marp/), with a [Inuits](https://inuits.eu) theme.**
+---
+
+### :warning: **This repository is pre-release version, and we have already dropped maintenance.** We are planning the future of Marp at [**@marp-team/marp**](https://github.com/marp-team/marp).
+
+See more details in [yhatt/marp#267](https://github.com/yhatt/marp/issues/267).
+
+> We will archive this repository when a future Marp has grown to replace a pre-release version.
+
+---
 
 ![Marp](screenshot.png)
 
@@ -17,7 +26,7 @@ Harpoon
 :arrow_forward: **[Download latest archives from release page.](https://github.com/yhatt/marp/releases)**
 
 - **Windows**: Unzip `*.*.*-Marp-win32-[arch].zip` and run `Marp.exe`.
-- **Mac OS X**: Mount `*.*.*-Marp-darwin-x64.dmg`, D&D `Marp` to `Applications` and run it from Applications folder / Launchpad. Or use [Homebrew](http://brew.sh) [Cask](https://caskroom.github.io): `brew cask install marp`
+- **macOS**: Mount `*.*.*-Marp-darwin-x64.dmg`, D&D `Marp` to `Applications` and run it from Applications folder / Launchpad. Or use [Homebrew](http://brew.sh) [Cask](https://caskroom.github.io): `brew cask install marp`
 - **Linux**: Unpack `*.*.*-Marp-linux-[arch].tar.gz` and run `Marp`.
 
 ### How to write slides?
@@ -41,8 +50,8 @@ foobar
 ### Getting started
 
 ```
-npm install
-npm start
+yarn install
+yarn start
 ```
 
 ### Customizing Slide CSS
@@ -52,7 +61,7 @@ It's easy, include a `<link>` tag at the top of your presentation, or alternativ
 ### Create release builds
 
 ```
-gulp release
+yarn gulp release
 ```
 
 Please set application version in `package.json`.
@@ -63,22 +72,14 @@ Please set application version in `package.json`.
 
 If you want to build for Windows in other platforms, please install [Wine](https://www.winehq.org/) to rewrite Electron's resources.
 
-##### OSX
+##### macOS
 
-To build for Darwin is only supported in OSX. Please install [appdmg](https://github.com/LinusU/node-appdmg) to create archive (`.dmg`) for Darwin release.
-
-```
-npm install appdmg
-```
-
-###### Notices
-
-- **Don't add development dependency of `appdmg` to `package.json`.** The release task would fail in other platforms.
-- *`gulp-appdmg` is no longer in use since v0.0.4.*
+To build for Darwin is only supported in macOS.
 
 ## Licenses
 
-Copyright &copy; 2016 [Yuki Hattori](https://github.com/yhatt).
+Copyright &copy; 2016-2018 [Yuki Hattori](https://github.com/yhatt).
+
 This software released under the [MIT License](https://github.com/yhatt/marp/blob/master/LICENSE).
 
 Files under images/themes/inuits/ are not covered by the above copyright and

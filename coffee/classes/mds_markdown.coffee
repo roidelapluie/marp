@@ -16,7 +16,7 @@ module.exports = class MdsMarkdown
         return ''
       else if highlightJs.getLanguage(lang)
         try
-          return highlightJs.highlight(lang, code).value
+          return highlightJs.highlight(lang, code, true).value
 
     highlightJs.highlightAuto(code).value
 
@@ -47,6 +47,9 @@ module.exports = class MdsMarkdown
   @generateAfterRender: ($) ->
     (md) ->
       mdElm = $("<div>#{md.parsed}</div>")
+
+      # Sanitize link tag
+      mdElm.find('link:not([rel="stylesheet"])').remove()
 
       mdElm.find('p > img[alt~="bg"]').each ->
         $t  = $(@)
